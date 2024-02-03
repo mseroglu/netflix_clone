@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(images/TR-tr-20231120-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    position: relative;
+}
+.main .box{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: .65;
+}
+nav{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    z-index: 10;
+    position: relative;
+    justify-content: space-between;
+}
+nav img{
+    width: 135px;
+}
+.hero{
+    position: relative;
+    color: white;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20%;
+    gap: 25px;
+}
+.hero span:nth-child(1){
+    font-size: 44px;
+    font-weight:800;
+    text-align: center;
+}
+.hero span:nth-child(2){
+    font-size: x-large;
+    text-align: center;
+}
+.hero span:nth-child(3){
+    font-size: large;
+    text-align: center;
+}
+.seperation{
+    border: 4px solid #232323;
+}
+.btn{
+    background-color: rgba(248, 243, 243, .021);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: .25px solid rgba(255, 255, 255, 0.615);
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 11pt;
+}
+.btn-red{
+    background-color: #f30f20;
+    font-size: 24px;
+    padding: 3px 24px;
+}
+.btn-red-sm{
+    background-color: #f30f20;
+}
+.hero-buttons{
+    display: flex;
+    gap: 10px;
+}
+.hero-buttons input{
+    padding: 20px 10px;
+    background-color: rgba(11, 11, 11, .7);
+    border: 1px solid #f30f20;
+    width: 400px;
+    color: white;
+}
+.first{
+    color: white;
+    display: flex;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 80px 0;
+}
+.first div{
+    align-content: center; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.first .secImg{
+    position: relative;
+}
+.secImg img{
+    width: 600px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg .video1{
+    position: absolute;
+    width: 450px;
+    top: 80px;
+    right: 70px;
+}
+.first div span:first-child{
+    font-size: 48px;
+    font-weight: bolder;
+}
+.first div span:last-child{
+    font-size: 24px;
+}
+.video2{
+    position: absolute;
+    height: 210px;
+    top: 50px;
+    right: 120px;
+}
+.download-area{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray;
+    height: 100px;
+    width: 320px;
+    border-radius: 10px;
+    color: white;
+    bottom: 30px;
+    left: 140px;
+    z-index: 11;
+    padding: 10px;
+    align-items: center;
+    gap: 15px;
+    background-color: black;
+}
+.download-area img{
+    width: 60px;
+    margin-left: 10px;
+}
+.download-area svg{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.download-area span h6{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+.download-area span p{
+    font-size: 14px;
+    color: blue;
+}
+.faq{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:  50px 10%;
+    align-items: center;
+}
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+}
+.faqbox{    
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    font-size: 22px;
+    transition: all 1s ease-out;
+    width: 80vw;
+}
+.faqbox:hover{
+    background-color: #414141;
+    cursor: pointer;
+}
+footer{
+    color: #AFAFAF;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+    padding: 60px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 0;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+a{
+    color: #AFAFAF;
+    font-size: 14px;
+}
+
