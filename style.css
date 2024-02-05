@@ -13,9 +13,9 @@ body{
     background-image: url(images/TR-tr-20231120-popsignuptwoweeks-perspective_alpha_website_large.jpg);
     background-repeat: no-repeat;
     height: 100vh;
-    background-size: max(1200px, 100vw);
+    background-size: max(1920px, 100vw);
     background-position: center center;
-    position: relative;
+    position: relative;    
 }
 .main .box{
     height: 100vh;
@@ -24,6 +24,7 @@ body{
     top: 0;
     background-color: black;
     opacity: .65;
+    
 }
 nav{
     max-width: 80vw;
@@ -37,7 +38,7 @@ nav{
     justify-content: space-between;
 }
 nav img{
-    width: 135px;
+    width: 200px;
 }
 .hero{
     position: relative;
@@ -47,7 +48,7 @@ nav img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 20%;
+    padding: 0 20vw;
     gap: 25px;
 }
 .hero span:nth-child(1){
@@ -62,6 +63,16 @@ nav img{
 .hero span:nth-child(3){
     font-size: large;
     text-align: center;
+}
+.hero-2{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 120px;
+}
+.hero-2 .hero-description{
+    font-size: large;
+    text-align: center;
+    margin-bottom: 20px;    
 }
 .seperation{
     border: 4px solid #232323;
@@ -81,6 +92,7 @@ nav img{
     background-color: #f30f20;
     font-size: 24px;
     padding: 3px 24px;
+    white-space: nowrap;
 }
 .btn-red-sm{
     background-color: #f30f20;
@@ -88,6 +100,8 @@ nav img{
 .hero-buttons{
     display: flex;
     gap: 10px;
+    align-content: center;
+    justify-content: center;
 }
 .hero-buttons input{
     padding: 20px 10px;
@@ -103,7 +117,7 @@ nav img{
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding: 80px 0;
+    padding: 50px 0;
 }
 .first div{
     align-content: center; 
@@ -119,7 +133,6 @@ nav img{
     position: relative;
     z-index: 10;
 }
-
 .secImg .video1{
     position: absolute;
     width: 450px;
@@ -221,3 +234,294 @@ a{
     font-size: 14px;
 }
 
+@media screen and (max-width: 1280px) {
+    nav{
+        max-width: 95vw;
+    }
+    .main{
+        height: 676px;
+    }
+    .main .box{
+        height: 676px;
+    }
+    .hero{
+        padding: 0 30px;
+    }
+    .hero span:nth-child(1){
+        font-size: 42px;
+        font-weight:800;
+    }
+    .hero span:nth-child(2){
+        font-size: 22px;
+    }
+    .hero span:nth-child(3){
+        font-size: 21px;
+    }
+    .first{
+        max-width: 95%;
+        padding: 60px 10px;
+    }
+    .secImg img{
+        width: 500px;
+    }
+    .secImg .video1{
+        position: absolute;
+        width: 370px;
+        top: 75px;
+        right: 70px;
+    }
+    .video2{
+        position: absolute;
+        height: 180px;
+        top: 40px;
+        right: 100px;
+    }
+    .download-area{
+        height: 90px;
+        width: 340px;
+        bottom: 30px;
+        left: 80px;
+    }
+    .download-area img{
+        width: 50px;
+        margin-left: 10px;
+    }
+    .download-area span p{
+        text-align: left;
+    }
+    .first div span:first-child{
+        font-size: 42px;
+        font-weight: bolder;
+    }
+    .first div span:last-child{
+        font-size: 22px;
+    }
+    .faq{
+        padding:  50px 10px;
+    }
+    .faq h2{
+        font-size: 40px;
+    }
+    .faqbox{
+        padding: 22px;
+        font-size: 22px;
+        width: 90vw;
+    }
+    footer{
+        width: 90vw;
+        padding: 30px 0;
+    }
+    .hero-2{
+        padding: 40px 60px;
+    }
+    .hero-2 .hero-description{
+        font-size: 20px;
+        margin-bottom: 20px;    
+    }
+    
+}
+@media screen and (max-width: 960px){
+    .main{
+        height: 576px;
+    }
+    .main .box{
+        height: 576px;
+    }
+    .hero{
+        padding: 0 30px;
+    }
+    .hero span:nth-child(1){
+        font-size: 30px;
+        font-weight:600;
+    }
+    .hero span:nth-child(2){
+        font-size: large;
+    }
+    .hero span:nth-child(3){
+        font-size: large;
+    }
+    .first{
+        flex-wrap: wrap;
+        padding: 80px 10px;
+        gap: 30px;
+    }
+    .first div span:first-child{
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .first div span:last-child{
+        font-size: 18px;
+        text-align: center;
+    }
+    .secImg{
+        order: 2;
+    }
+    .secImg img{
+        width: 600px;
+    }
+    .secImg .video1{
+        position: absolute;
+        width: 450px;
+        top: 90px;
+        right: 75px;
+    }
+    .video2{
+        position: absolute;
+        height: 215px;
+        top: 48px;
+        right: 110px;
+    }
+    .download-area{
+        height: 90px;
+        width: 380px;
+        bottom: 30px;
+        left: 110px;
+    }
+    .download-area img{
+        width: 50px;
+        margin-left: 10px;
+    }
+    .download-area span p{
+        text-align: left;
+    }
+    .faq{
+        padding:  50px 10px;
+    }
+    .faq h2{
+        font-size: 30px;
+    }
+    .faqbox{
+        padding: 18px;
+        font-size: 18px;
+        width: 90vw;
+    }
+    footer{
+        width: 90vw;
+        padding: 30px 0;
+    }
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 0;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    nav img{
+        width: 120px;
+    }
+    .main{
+        height: 576px;
+        background-size: max(1920px, 100vw); 
+    }
+    .main .box{
+        height: 576px;
+    }
+    .hero{
+        padding: 0 30px;
+    }
+    .hero span:nth-child(1){
+        font-size: 30px;
+        font-weight:600;
+    }
+    .hero span:nth-child(2){
+        font-size: large;
+    }
+    .hero span:nth-child(3){
+        font-size: large;
+    }
+    .hero-2{
+        justify-content: center;
+        margin: 20px 0;
+        padding: 0 20px;        
+    }
+    .hero-buttons{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-2 .hero-description{
+        font-size: 17px;
+    }
+    .hero-buttons input{
+        width: 100%;
+        padding: 10px;
+        max-width: 350px;
+    }
+    .hero-buttons button{
+        width: 50%;
+        max-width: 170px;
+    }
+    .first{
+        flex-wrap: wrap;
+        padding: 40px 10px;
+        gap: 10px;
+    }
+    .first div span:first-child{
+        font-size: 24px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .first div span:last-child{
+        font-size: 16px;
+        text-align: center;
+    }
+    .secImg{
+        order: 2;
+    }
+    .secImg img{
+        width: 400px;
+    }
+    .secImg .video1{
+        width: 300px;
+        top: 60px;
+        right: 50px;
+    }
+    .video2{
+        position: absolute;
+        height: 140px;
+        top: 30px;
+        right: 80px;
+    }
+    .download-area{
+        height: 60px;
+        width: 260px;
+        bottom: 10px;
+        left: 70px;
+    }
+    .download-area img{
+        width: 40px;
+        margin-left: 0px;
+    }
+    .download-area span p{
+        text-align: left;
+        font-size: 12px;
+    }
+    .download-area span h6{
+        text-align: left;
+        font-size: 14px;
+    }
+    .faq{
+        padding:  50px 10px;
+    }
+    .faq h2{
+        font-size: 30px;
+    }
+    .faqbox{
+        padding: 18px;
+        font-size: 18px;
+        width: 90vw;
+    }
+    footer{
+        width: 90vw;
+        padding: 30px 0;
+    }
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 0;
+        gap: 30px;
+    }
+
+}
